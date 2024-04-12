@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Plans</title>
+    <style>
+        body {
+        font-family: Arial, sans-serif;
+        margin: 10 auto; 
+        padding: 0;
+        background-color: #edf2f4;
+        }
+
+        .navbar {
+        background-color: #edf2f4;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        max-width: 1200px; 
+        margin: 0 auto; 
+       }
+        
+        .navbar .logo {
+            width: 50px;
+            height: auto;
+        }
+        .navbar a {
+            color: black; 
+            text-decoration: none;
+            font-size: 25px;
+            padding: 14px 20px;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .footer {
+        background-color:  #edf2f4;
+        color: rgb(31, 29, 29);
+        text-align: left;
+        padding: 170px 10px; 
+        box-sizing: border-box; 
+        min-height: 100px; 
+        }
+
+
+       .footer p {
+       margin-bottom: 20px; 
+       }
+
+      .footer-content {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap; 
+      max-width: 70%; 
+      margin: 7% auto; 
+      }
+
+     .footer-content .copyright {
+     text-align: top-left; 
+     margin-left: 50px; 
+     left: 15%;
+     }
+
+     .footer-content .heading {
+      text-align: right; 
+      margin-bottom: 50px;
+      font-size: 18px; 
+     }
+
+     .section {
+     flex: 0 0 calc(33.33% - 20px);
+     position: relative; 
+     margin-bottom: 40px; 
+  
+    }
+
+    .section h2 {
+    position: absolute;
+    top: -20px; 
+    left: 49%;
+    transform: translateX(-50%); 
+    margin-top: 10px;
+    font-size: 25px;
+    }
+
+    .section nav {
+    position: absolute;
+    top: 20px; 
+    left: 55%; 
+    transform: translateX(-50%); 
+    }
+
+    .section nav a {
+    display: block;
+    color:  #6b705c;
+    text-decoration: none;
+    margin: 5px 0;
+    font-size: 18px;
+    }
+
+    .section nav a:hover {
+    text-decoration: underline;
+    }
+
+
+        
+        
+        .comparison-table {
+            width: 65%; 
+            margin: 20px auto; 
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+
+
+        .flex-container {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+        }
+        .plan {
+         border: 1px solid #ccc;
+         border-radius: 10px; 
+         padding: 20px;
+         width: 30%;
+         text-align: center;
+        }
+        .plan h2 {
+            text-align: center;
+        }
+        .plan ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .plan ul li {
+            margin-bottom: 10px;
+        }
+        .comparison-table {
+        width: 65%; 
+        margin: 20px auto; 
+        border-collapse: collapse;
+        margin-top: 20px;
+        }
+
+       .comparison-table th,
+       .comparison-table td {
+       border-bottom: 1px solid #ccc;
+       padding: 30px;
+       text-align: center;
+       }
+
+      .comparison-table th {
+      background-color: #f2f2f2;
+      }
+        .line-container {
+            width: 65%; 
+            margin: 55px auto;
+         
+        }
+
+       hr {
+       border: 0;
+       height: 2px; 
+       background-color: #ccc; 
+       }
+        
+        .plan:nth-child(1) .btn {
+            background-color: transparent; 
+            border: 2px solid blue; 
+            color: blue;
+            padding: 10px 24px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease; 
+        }
+        .plan:nth-child(1) .btn:hover {
+            background-color: #a9d6e5; 
+        }
+        .logo-container {
+         display: flex;
+         align-items: center;
+        }
+
+        .logo-container p {
+        margin-left: 10px; 
+        }
+        .pricing-title {
+        text-align: center;
+        font-size: 50px;
+        
+        }
+
+        .pricing-description {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 28px;
+        margin: 0 20px;
+        line-height: 2.5; 
+        height: 7.5em; 
+        }
+        .pricing-box {
+        background-color: #edf2f4;
+        padding: 8%;
+        border-radius: 10px;
+        color: #6b705c; 
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo-container">
+            <img src="images/bootstrap-logo-black.svg" alt="Logo" class="logo">
+            <h2>Pricing example</h2>
+        </div>
+        <div>
+            <a href="#">Features</a>
+            <a href="#">Enterprise</a>
+            <a href="#">Support</a>
+            <a href="#">Pricing</a>
+        </div>
+    </div>
+    
+<div class="line-container">
+    <hr>
+</div>
+<div class="pricing-box">
+    <h1 class="pricing-title">Pricing</h1>
+    <h2 class="pricing-description">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</h2>
+</div>
+
+
+
+<div class="flex-container">
+    <div class="plan">
+        <h2>Free</h2>
+        <hr>
+        <ul>
+            <li style="font-size: 50px;color:grey">$0/mo</li>
+            <li>10 users included</li>
+            <li>2 GB of storage</li>
+            <li>Email support</li>
+            <li>Help center access</li>
+        </ul>
+        <button class="btn">Sign up for free</button>
+    </div>
+    <div class="plan">
+        <h2>Pro</h2>
+        <hr>
+        <ul>
+            <li style="font-size: 50px;color:grey;">$15/mo</li>
+            <li>$15/mo</li>
+            <li>10 GB of storage</li>
+            <li>Priority email support</li>
+            <li>Help center access</li>
+        </ul>
+        <button class="btn" style="background-color: blue; border: 2px solid blue; color: white; padding: 10px 24px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin-top: 10px; cursor: pointer; border-radius: 5px; transition: background-color 0.3s ease;">Get Started</button>
+
+
+
+
+    </div>
+    <div class="plan">
+        <h2>Enterprise</h2>
+        <hr>
+        <ul>
+            <li style="font-size: 50px; color: grey;">$29/mo</li>
+            <li>30 users included</li>
+            <li>15 GB of storage</li>
+            <li>Phone and email support</li>
+            <li>Help center access</li>
+        </ul>
+        <button class="btn" style="background-color: blue; border: 2px solid blue; color: white; padding: 10px 24px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin-top: 10px; cursor: pointer; border-radius: 5px; transition: background-color 0.3s ease;">Contact us</button>
+
+
+
+
+    </div>
+</div>
+
+<table class="comparison-table">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Free</th>
+            <th>Pro</th>
+            <th>Enterprise</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Public</td>
+            <td>✓</td>
+            <td>✓</td>
+            <td>✓</td>
+        </tr>
+        <tr>
+            <td>Private</td>
+            <td></td>
+            <td>✓</td>
+            <td>✓</td>
+        </tr>
+        <tr>
+            <td>Permissions</td>
+            <td></td>
+            <td></td>
+            <td>✓</td>
+        </tr>
+        <tr>
+            <td>Sharing</td>
+            <td></td>
+            <td></td>
+            <td>✓</td>
+        </tr>
+        <tr>
+            <td>Unlimited members</td>
+            <td></td>
+            <td></td>
+            <td>✓</td>
+        </tr>
+        <tr>
+            <td>Extra security</td>
+            <td></td>
+            <td></td>
+            <td>✓</td>
+        </tr>
+    </tbody>
+</table>
+<div class="line-container">
+    <hr>
+</div>
+<div class="footer">
+    <div class="copyright">
+        <p>&copy; 2017-2024 Company Name. All rights reserved.</p>
+    </div>
+    <div class="footer-content">
+        <div class="section">
+            <h2>Features</h2>
+            <nav>
+                <a href="#">Cool stuff</a>
+                <a href="#">Random feature</a>
+                <a href="#">Team feature</a>
+                <a href="#">Stuff for developers</a>
+                <a href="#">Another one</a>
+                <a href="#">Last time</a>
+            </nav>
+        </div>
+        <div class="section">
+            <h2>Resources</h2>
+            <nav>
+                <a href="#">Resource</a>
+                <a href="#">Resource name</a>
+                <a href="#">Another resource</a>
+                <a href="#">Final resource</a>
+            </nav>
+        </div>
+        <div class="section">
+            <h2>About</h2>
+            <nav>
+                <a href="#">Team</a>
+                <a href="#">Locations</a>
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+            </nav>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
